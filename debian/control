@@ -1,0 +1,12 @@
+Source: ros-hydro-camera1394
+Section: misc
+Priority: extra
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libdc1394-22-dev, ros-hydro-camera-info-manager, ros-hydro-catkin, ros-hydro-diagnostic-updater, ros-hydro-driver-base, ros-hydro-dynamic-reconfigure, ros-hydro-image-transport, ros-hydro-nodelet, ros-hydro-roscpp, ros-hydro-rostest, ros-hydro-sensor-msgs, ros-hydro-tf
+Homepage: http://ros.org/wiki/camera1394
+Standards-Version: 3.9.2
+
+Package: ros-hydro-camera1394
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libdc1394-22-dev, ros-hydro-camera-info-manager, ros-hydro-diagnostic-updater, ros-hydro-dynamic-reconfigure, ros-hydro-image-transport, ros-hydro-nodelet, ros-hydro-roscpp, ros-hydro-sensor-msgs, ros-hydro-tf
+Description: ROS driver for devices supporting the IEEE 1394 Digital Camera (IIDC) protocol. Supports the ROS image_pipeline, using libdc1394 for device access.
