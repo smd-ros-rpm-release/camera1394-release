@@ -12,7 +12,7 @@ tracks:
     last_version: 1.9.5
     name: camera1394
     patches: null
-    release_inc: '0'
+    release_inc: '1'
     release_repo_url: git@github.com:ros-drivers-gbp/camera1394-release.git
     release_tag: camera1394-:{version}
     ros_distro: hydro
