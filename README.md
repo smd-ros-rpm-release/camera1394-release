@@ -1,3 +1,22 @@
+## camera1394 (hydro) - 1.9.5-1
+
+The packages in the `camera1394` repository were released into the `hydro` distro by running `/usr/bin/bloom-release camera1394 -r hydro -t hydro` on `Sat, 24 May 2014 20:52:28 -0000`
+
+The `camera1394` package was released.
+
+Version of package(s) in repository `camera1394`:
+- rosdistro version: `1.9.5-0`
+- old version: `1.9.5-0`
+- new version: `1.9.5-1`
+
+Versions of tools used:
+- bloom version: `0.5.9`
+- catkin_pkg version: `0.2.2`
+- rosdep version: `0.10.27`
+- rosdistro version: `0.3.5`
+- vcstools version: `0.1.35`
+
+
 ## camera1394 (hydro) - 1.9.5-0
 
 The packages in the `camera1394` repository were released into the `hydro` distro by running `/usr/bin/bloom-release -r hydro -t hydro camera1394` on `Tue, 29 Apr 2014 16:50:33 -0000`
