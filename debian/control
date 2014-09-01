@@ -1,0 +1,12 @@
+Source: ros-indigo-camera1394
+Section: misc
+Priority: extra
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libdc1394-22-dev, ros-indigo-camera-info-manager, ros-indigo-catkin, ros-indigo-diagnostic-updater, ros-indigo-driver-base, ros-indigo-dynamic-reconfigure, ros-indigo-image-transport, ros-indigo-message-generation, ros-indigo-nodelet, ros-indigo-roscpp, ros-indigo-rostest, ros-indigo-sensor-msgs, ros-indigo-tf
+Homepage: http://ros.org/wiki/camera1394
+Standards-Version: 3.9.2
+
+Package: ros-indigo-camera1394
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libdc1394-22-dev, ros-indigo-camera-info-manager, ros-indigo-diagnostic-updater, ros-indigo-dynamic-reconfigure, ros-indigo-image-transport, ros-indigo-message-runtime, ros-indigo-nodelet, ros-indigo-roscpp, ros-indigo-sensor-msgs, ros-indigo-tf
+Description: ROS driver for devices supporting the IEEE 1394 Digital Camera (IIDC) protocol. Supports the ROS image_pipeline, using libdc1394 for device access.
