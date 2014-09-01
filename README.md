@@ -1,3 +1,24 @@
+## camera1394 (indigo) - 1.10.0-0
+
+The packages in the `camera1394` repository were released into the `indigo` distro by running `/usr/bin/bloom-release camera1394 -r indigo -t indigo -n` on `Mon, 01 Sep 2014 23:38:39 -0000`
+
+The `camera1394` package was released.
+
+Version of package(s) in repository `camera1394`:
+- upstream repository: https://github.com/ros-drivers/camera1394.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.10.0-0`
+
+Versions of tools used:
+- bloom version: `0.5.11`
+- catkin_pkg version: `0.2.4`
+- rosdep version: `0.10.30`
+- rosdistro version: `0.3.5`
+- vcstools version: `0.1.35`
+
+
 ## camera1394 (hydro) - 1.9.5-1
 
 The packages in the `camera1394` repository were released into the `hydro` distro by running `/usr/bin/bloom-release camera1394 -r hydro -t hydro` on `Sat, 24 May 2014 20:52:28 -0000`
