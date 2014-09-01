@@ -1,9 +1,18 @@
 Change history
 ==============
 
+1.10.0 (2014-09-01)
+-------------------
+
+ * Initial Indigo release.
+ * Add DC1394 trigger support (`#9`_), thanks to Boris Gromov.
+ * Add services to get and set camera-specific registers (`#32`_),
+   thanks to Tomas Petricek.
+
 1.9.5 (2014-04-29)
 ------------------
 
+ * Hydro release update.
  * Fix problems with catkin build exports (`#33`_).
  * Make number of DMA buffers a parameter (`#29`_), thanks to Tomas
    Petricek.
@@ -19,7 +28,7 @@ Change history
  * Enable tests requiring a real camera when ``USE_DEVICE`` set.
 
 1.9.3 (2013-06-05)
--------------------
+------------------
 
  * Add Pan Control feature (`#7`_), works with Point Grey Ladybug 3.
    Thanks to Josep Bosch, Universitat de Girona.
@@ -127,10 +136,12 @@ Change history
 .. _`#1`: https://github.com/ros-drivers/camera1394/issues/1
 .. _`#6`: https://github.com/ros-drivers/camera1394/issues/6
 .. _`#7`: https://github.com/ros-drivers/camera1394/issues/7
+.. _`#9`: https://github.com/ros-drivers/camera1394/pull/9
 .. _`#10`: https://github.com/ros-drivers/camera1394/issues/10
 .. _`#11`: https://github.com/ros-drivers/camera1394/pull/11
 .. _`#15`: https://github.com/ros-drivers/camera1394/issues/15
 .. _`#29`: https://github.com/ros-drivers/camera1394/issues/29
+.. _`#32`: https://github.com/ros-drivers/camera1394/pull/32
 .. _`#33`: https://github.com/ros-drivers/camera1394/issues/33
 .. _`#4222`: https://code.ros.org/trac/ros-pkg/ticket/4222
 .. _`#4251`: https://code.ros.org/trac/ros-pkg/ticket/4251

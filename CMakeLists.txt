@@ -8,6 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
   driver_base
   dynamic_reconfigure
   image_transport
+  message_generation
   nodelet
   roscpp
   rostest
@@ -30,6 +31,12 @@ find_library(DC1394_LIBRARY
   PATHS ${DC1394_PKGCONF_LIBRARY_DIRS}
 )
 
+add_service_files(FILES
+  GetCameraRegisters.srv
+  SetCameraRegisters.srv)
+
+generate_messages(DEPENDENCIES std_msgs)
+
 # auto-generate dynamic reconfiguration GUI before catkin_package()
 generate_dynamic_reconfigure_options(cfg/Camera1394.cfg)
 
@@ -39,6 +46,7 @@ catkin_package(CATKIN_DEPENDS
                  diagnostic_updater
                  dynamic_reconfigure
                  image_transport
+                 message_runtime
                  nodelet
                  roscpp
                  sensor_msgs
@@ -67,6 +75,16 @@ if (CATKIN_ENABLE_TESTING)
   if (${USE_DEVICE})
     add_rostest(tests/camera_node_hz.test)
     add_rostest(tests/camera_nodelet_hz.test)
+  endif()
+
+  if (${USE_TRIGGER})
+    # build the software trigger node, but do not install it
+    add_executable(camera1394_trigger_node tests/trigger_node.cpp)
+    target_link_libraries(camera1394_trigger_node
+                          ${catkin_LIBRARIES}
+                          ${DC1394_LIBRARY})
+    add_rostest(tests/trigger_node.test)
+    add_rostest(tests/trigger_nodelet.test)
   endif()
   
   add_rostest(tests/no_device_node.test)

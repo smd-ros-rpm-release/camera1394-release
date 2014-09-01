@@ -48,9 +48,10 @@
 #include <sensor_msgs/Image.h>
 #include <sensor_msgs/CameraInfo.h>
 #include "camera1394/Camera1394Config.h"
+#include "registers.h"
 #include "format7.h"
 
-class Features;
+class Features;                      // actually defined in features.h
 
 namespace camera1394
 {
@@ -69,12 +70,12 @@ namespace camera1394
   class Camera1394
   {
   public:
-    Camera1394 ();
+    Camera1394();
     ~Camera1394 ();
 
     int open(camera1394::Camera1394Config &newconfig);
     int close();
-    void readData (sensor_msgs::Image &image);
+    bool readData (sensor_msgs::Image &image);
 
     /** check whether CameraInfo matches current video mode
      *
@@ -108,6 +109,7 @@ namespace camera1394
 
     std::string device_id_;
     boost::shared_ptr<Features> features_;
+    boost::shared_ptr<Registers> registers_;
 
   private:
       
